@@ -59,6 +59,13 @@ if __name__ == "__main__":
     if padding:
         dz_dt_num_naive = torch.cat((dz_dt_num_naive, dz_dt_num_naive[-1].unsqueeze(1)))
 
+    # Compute signal-to-noise ratio.
+    power_signal = torch.mean(torch.pow(y, 2))
+    power_noise = torch.mean(torch.pow(z- y, 2))
+    snr = power_signal / power_noise
+    snr_db = 10 * torch.log10(snr)
+    print(f"The signal-to-noise ration is: {snr.item():.4} = {snr_db.item():.4} dB")
+
     # Plot.
     fig_c, axs_c = plt.subplots(dim_data, 1, figsize=(12, 8))
     fig_n, axs_n = plt.subplots(dim_data, 1, figsize=(12, 8))
