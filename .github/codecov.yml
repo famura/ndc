@@ -1,0 +1,22 @@
+codecov:
+  token: ad953cd4-94de-4240-98cd-fe7037ca4277
+ignore:
+  - "examples"
+  - "tests"
+  - "setup.py"
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false # if true: only post the comment if coverage changes
+  require_base: no # [yes :: must have a base report to post]
+  require_head: yes # [yes :: must have a head report to post]
+  branches: # branch names that can post comment
+    - "main"
+github_checks:
+  annotations: false
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 80%
