@@ -1,5 +1,7 @@
 # Numerical Differentiation Leveraging Convolution (ndc)
 
+<img alt="logo" align="left" height="170px" src="logo.png" style="padding-right: 20px">
+
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](https://opensource.org/licenses/MIT)
 [![codecov](https://codecov.io/gh/famura/ndc/branch/main/graph/badge.svg?token=ESUTNFwtYY)](https://codecov.io/gh/famura/ndc)
 [![isort](https://img.shields.io/badge/imports-isort-green)](https://pycqa.github.io/isort/)
